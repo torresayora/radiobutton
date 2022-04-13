@@ -14,9 +14,9 @@ servicio = tkinter.IntVar()
 
 ttk.Label(root, text="Selecciona una opción\n",justify="center").pack()
 
-ttk.Radiobutton(root, text= "Fotografía", variable = servicio, value=1, command=seleccionar).pack()
-ttk.Radiobutton(root, text= "Diseño      ", variable = servicio, value= 2, command=seleccionar).pack()
-ttk.Radiobutton(root, text= "Video       ", variable = servicio, value= 3, command=seleccionar).pack()
+ttk.Radiobutton(root, text= "Fotografía", variable = servicio, value=1, command=seleccionar).pack(anchor = 'w')
+ttk.Radiobutton(root, text= "Diseño", variable = servicio, value= 2, command=seleccionar).pack(anchor = 'w')
+ttk.Radiobutton(root, text= "Video", variable = servicio, value= 3, command=seleccionar).pack(anchor = 'w')
 
 seleccion=ttk.Label(root)
 seleccion.pack(pady=8)
